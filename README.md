@@ -4,6 +4,9 @@
 
 The quick setup __dynamically__ changes the URL of your download link depending on whether the user is on Windows, MacOS, or Linux.
 
+## Install
+Simply copy the code from dist/downloadify.min.js and paste it into a js file. Use in any web project!
+
 ## Usage
 ```html
 <html>
@@ -27,5 +30,6 @@ The quick setup __dynamically__ changes the URL of your download link depending 
   </body>
 </html>
 ```
+
 
 It only supports the three platforms, and a fallback link in case the user is not on one of these 3 platforms, but I'll improve on it in the future. 
