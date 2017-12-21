@@ -7,24 +7,24 @@ The quick setup __dynamically__ changes the URL of your download link depending 
 ## Usage
 ```html
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Download Test</title>
-	</head>
-	<body>
-		<button type="button" id="button">Download Here</button>
-		<script src="downloadify.js"></script>
-		<script>
-			var button = document.getElementById('button');
+  <head>
+    <meta charset="utf-8">
+    <title>Download Test</title>
+  </head>
+  <body>
+    <button type="button" id="button">Download Here</button>
+    <script src="downloadify.js"></script>
+    <script>
+      var button = document.getElementById('button');
 
-			var downloadify = new Downloadify(button, navigator, {
-				windows: 'https://google.com',
-				macos: 'https://bing.com',
-				linux: 'https://medium.com',
-				fallback: 'https://yahoo.com'
-			});
-		</script>
-	</body>
+      var downloadify = new Downloadify(button, navigator, {
+        windows: 'https://google.com',
+        macos: 'https://bing.com',
+        linux: 'https://medium.com',
+        fallback: 'https://yahoo.com'
+      });
+    </script>
+  </body>
 </html>
 ```
 
