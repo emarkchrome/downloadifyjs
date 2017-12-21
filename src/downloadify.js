@@ -11,15 +11,17 @@
 			this.click = this.click.bind(this)
 			this.kill = this.kill.bind(this)
 
-			if(this.navigator.platform.indexOf('Windows NT') != -1) {
+			if(this.navigator.platform.indexOf('Win') != -1) {
 				this.platform = 'windows'
-			} else if(this.navigator.platform.indexOf('Macintosh') != -1) {
-				this.platform = 'windows'
+			} else if(this.navigator.platform.indexOf('Mac') != -1) {
+				this.platform = 'macos'
 			} else if(this.navigator.platform.indexOf('Linux') != -1) {
 				this.platform = 'linux'
 			}
 
-			this.target.addEventListener('click', this.click())
+			this.target.addEventListener('click', () => {
+				this.click()
+			})
 		}
 		kill() {
 			this.target.removeEventListener('click', this.click())
@@ -42,4 +44,6 @@
 			}
 		}
 	}
-})(window)
+
+	window.Downloadify = Downloadify
+})()
