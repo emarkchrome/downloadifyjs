@@ -28,4 +28,4 @@ The quick setup __dynamically__ changes the URL of your download link depending 
 </html>
 ```
 
-It only supports the three platforms, and a fallback link in case the user is not on one of these 3 platforms, but I'll improve on it in the future.
+It only supports the three platforms, and a fallback link in case the user is not on one of these 3 platforms, but I'll improve on it in the future. 
