@@ -1,5 +1,6 @@
 # Downloadify.js
 ### 📥 Quickly implement platform-specific download links on your website
+![](https://david-dm.org/emarkchrome/downloadifyjs.svg)
 Downloadify.js is a a small **1.3kb** library that takes the pain out of writing code for your download links to accommodate different platforms.
 
 The quick setup __dynamically__ changes the URL of your download link depending on whether the user is on Windows, MacOS, or Linux.
